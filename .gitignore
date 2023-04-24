@@ -1,0 +1,44 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+# Thumbnails
+._.Trashes
+# Files that might appear on external disk
+.Spotlight-V100
+.Trashes
+# Directory that might appear on external disk
+__MACOSX
+# Xcode
+*.pbxuser
+*.xcworkspace
+*.xcuserstate
+# CocoaPods
+Pods/
+# Carthage
+Carthage/Build
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# Ignore chrome directory
+chrome/*
+
+# Ignore images directory in script
+script/images/*
+script/res/*
+
+# Compiled files
+__pycache__/
+*.py[cod]
+
+cred/*

@@ -1,0 +1,15 @@
+## 予約
+# 当日から2日後までの予約（5時から23時まで、10分ごとに実行）
+*/10 5-23 * * * root cd ~/script/ && /usr/local/bin/python3 /root/script/reservation.py 0 2
+
+# 当日から2日後までの予約（0時から4時まで、30分ごとに実行）
+*/30 0-4 * * * root cd ~/script/ && /usr/local/bin/python3 /root/script/reservation.py 0 2
+
+# 3日前から前日までの予約（2時間おきの15分 ex. 0:15, 2:15, ...）
+15 */2 * * * root cd ~/script/ && /usr/local/bin/python3 /root/script/reservation.py -3 -1
+
+# 3日後から45日後までの予約（4時から20時の4時間おきの45分 ex 4:45, 6:45, ...）
+45 */4 4-20 * * root cd ~/script/ && /usr/local/bin/python3 /root/script/reservation.py 3 45
+
+## スタッフ情報
+20 1 * * * root cd ~/script/ && /usr/local/bin/python3 /root/script/stylist.py
